@@ -25,7 +25,8 @@ app.use(bodyParser.json());
 app.use(methodOverride("_method"));
 
 // Connecting to MongoDB Atlas database
-const url = "ADD-YOUR-OWN-MONGODB-ATLAS-CONNECTION-STRING-HERE";
+const url =
+  "mongodb+srv://Admin:Admin@testdb.9tot69y.mongodb.net/Diary?retryWrites=true&w=majority&appName=TESTDB";
 mongoose
   .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connected to MongoDB Atlas!"))
